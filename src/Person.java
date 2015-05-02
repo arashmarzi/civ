@@ -8,4 +8,8 @@ public class Person {
       globalPersonCount += 1;
       personId = globalPersonCount;
    }
+
+   public int getPersonId() {
+      return personId;
+   }
 }

@@ -1,5 +1,5 @@
 import java.io.*;
-
+import java.util.*;
 public class InfantrySquad {
    private static int globalSquadCount = 0;
    private int squadId;
@@ -10,11 +10,22 @@ public class InfantrySquad {
    private int squadAttack;
    private int squadSize = 5;
 
+   private ArrayList<Person> personList;
+
    public InfantrySquad() {
       globalSquadCount += 1;
       squadId = globalSquadCount;
       squadHealth = squadSize * health;
       squadAttack = squadSize * attack;
+      personList = new ArrayList<Person>(squadSize);
+      initPersonList();
+   }
+
+   private void initPersonList() {
+      for(int i = 0; i < squadSize; i++) {
+	      personList.add(new Person());
+         System.out.println("person: " + personList.get(i).getPersonId());
+      }
    }
 
    public void recalcSquadHealth() {

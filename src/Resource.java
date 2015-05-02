@@ -2,24 +2,22 @@ import java.io.*;
 
 public class Resource {
 
-      private static int globalResCount = 0;
-      private int resId;
-      private static final maxSupply = 2000;
-      private int supply;
-      private static final String resTypes = {"wood", "metal", "stone","food"};
-      private String resType;
+      protected static int globalResCount = 0;
+      protected int resId;
+      protected static final int maxSupply = 2000;
+      protected int supply;
+      protected static final String[] resTypes = {"wood", "metal", "stone","food"};
 
-      public Resource(String resType) {
+      public Resource() {
          globalResCount += 1;
          resId = globalResCount;
          supply = maxSupply;
-         this.resType = resType;
       }
 
       public int decrRes(double workRate) {
          int extract = 0;
-         if(supply > 0) {git@github.com:arashmarzi/civ.git
-            extract = supply - (supply / workrate);
+         if(supply > 0) {
+            extract = (int) (supply - (supply / workRate));
             supply /= workRate;
          }
 

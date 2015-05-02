@@ -24,4 +24,8 @@ public class Resource {
          return extract;
       }
 
+      public int getSupply() {
+         return supply;
+      }
+
    }

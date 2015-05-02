@@ -36,4 +36,8 @@ public class InfantrySquad {
       recalcSquadAttack();
       recalcSquadHealth();
    }
+
+   public double getWorkRate() {
+      return workRate;
+   }
 }

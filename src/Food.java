@@ -1,9 +1,9 @@
 import java.io.*;
 
-public class Wood extends Resource {
+public class Food extends Resource {
    private String resType;
 
-   public Wood() {
+   public Food() {
       super();
       resType = this.resTypes[0];
    }

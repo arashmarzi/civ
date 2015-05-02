@@ -1,11 +1,11 @@
 import java.io.*;
 
-public class Metal extends Resource {
+public class Stone extends Resource {
    private String resType;
 
-   public Metal() {
+   public Stone() {
       super();
-      resType = this.resTypes[1];
+      resType = this.resTypes[2];
    }
 
    public String getResType() {

@@ -28,4 +28,7 @@ public class Resource {
          return supply;
       }
 
+      public int getResId() {
+         return resId;
+      }
    }

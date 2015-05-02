@@ -4,6 +4,7 @@ public class Wood extends Resource {
    private String resType;
 
    public Wood() {
+      super();
       resType = this.resTypes[0];
    }
 

@@ -1,8 +1,9 @@
 import java.io.*;
 
 public class Person {
-   private static int globalPersonCount = 0;
+   protected static int globalPersonCount = 0;
    private int personId;
+   protected static final int health = 20;
 
    public Person(){
       globalPersonCount += 1;

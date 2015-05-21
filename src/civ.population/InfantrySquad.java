@@ -4,13 +4,14 @@ public class InfantrySquad {
    private static int globalSquadCount = 0;
    private int squadId;
    private static final double workRate = 1.1;
-   private static final int health = 20;
    private int squadHealth;
    private static final int attack = 5;
    private int squadAttack;
    private int squadSize = 5;
+/* need to fix relationship between person and InfantrySquad, maybe add Infantry person; make person abstract class?*/
 
    private ArrayList<Person> personList;
+
 
    public InfantrySquad() {
       globalSquadCount += 1;
@@ -24,7 +25,6 @@ public class InfantrySquad {
    private void initPersonList() {
       for(int i = 0; i < squadSize; i++) {
 	      personList.add(new Person());
-         System.out.println("person: " + personList.get(i).getPersonId());
       }
    }
 

@@ -1,3 +1,5 @@
+package civ.utils;
+
 import java.util.Random;
 
 public class Probability {

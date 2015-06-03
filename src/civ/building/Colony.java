@@ -1,4 +1,10 @@
+package civ.building;
+
 import java.io.*;
+import java.util.ArrayList;
+import civ.population.*;
+import civ.resource.*;
+import civ.utils.*;
 
 /*
    colony represents starting base of a civilization;
@@ -21,7 +27,7 @@ public class Colony {
       resList = new ArrayList<Resource>();
       popSize = 0;
       resSize = 0;
-      creatInitPop();
+      createInitPop();
    }
 
    private void createInitPop() {
@@ -33,7 +39,7 @@ public class Colony {
       }
    }
 
-   public void getPopSize() {
+   public int getPopSize() {
       return popSize;
    }
 
@@ -76,6 +82,5 @@ public class Colony {
                break;
          }
       }
-
    }
 }

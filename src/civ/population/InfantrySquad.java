@@ -1,3 +1,5 @@
+package civ.population;
+
 import java.io.*;
 import java.util.*;
 public class InfantrySquad {
@@ -5,6 +7,7 @@ public class InfantrySquad {
    private int squadId;
    private static final double workRate = 1.1;
    private int squadHealth;
+   private static final int health = 30;
    private static final int attack = 5;
    private int squadAttack;
    private int squadSize = 5;

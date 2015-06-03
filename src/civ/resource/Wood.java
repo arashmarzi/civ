@@ -1,9 +1,11 @@
+package civ.resource;
+
 import java.io.*;
 
-public class Food extends Resource {
+public class Wood extends Resource {
    private String resType;
 
-   public Food() {
+   public Wood() {
       super();
       resType = this.resTypes[0];
    }

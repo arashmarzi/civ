@@ -1,3 +1,5 @@
+package civ.resource;
+
 import java.io.*;
 
 public class Stone extends Resource {

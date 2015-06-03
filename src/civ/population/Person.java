@@ -1,3 +1,5 @@
+package civ.population;
+
 import java.io.*;
 
 public class Person {
